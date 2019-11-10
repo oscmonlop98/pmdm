@@ -2,6 +2,7 @@
 Repositorio para la asignatura de Programación Multimedia y Dispositivos Móviles
 
 CheckBox: Ejercicio de los CheckBoxes
+<br>
 DibujoCanvas: Ejemplo de uso de canvas con pinceles
 EjerArea: Ejercicio de calcular las areas de las diferentes formas
 Eventos: Ejercicio de diferentes tipos de invocar eventos con 3 botones
