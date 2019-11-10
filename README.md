@@ -1,19 +1,19 @@
 # pmdm
-Repositorio para la asignatura de Programación Multimedia y Dispositivos Móviles
+<h2>Ejercicios</h2>
 
-CheckBox: Ejercicio de los CheckBoxes<br>
-DibujoCanvas: Ejemplo de uso de canvas con pinceles<br>
-EjerArea: Ejercicio de calcular las areas de las diferentes formas<br>
-Eventos: Ejercicio de diferentes tipos de invocar eventos con 3 botones<br>
-HelloWorld: Actividad 3 de HelloWorld<br>
-LinearLayout: Ejemplo de LinearLayout hecho en clase<br>
-ListaDoble:  Dos listas de Directores y películas con adaptadores<br>
-ListaObjeto: Lista con un objeto y un adaptador<br>
-ListaSimple: Ejercicio de las hojas con Spinner simple incluido también<br>
-MenuBasico: Menu y submenu, y menu contextual explicado en clase<br>
-MiMusica: Ejercicio de integrar recursos de música<br>
-PersonaEntreActividades: Clase persona con datos e imágenes<br>
-PlantillaInicio: la plantilla que utilizo para comenzar los proyectos<br>
-RadioButton, ejemploBotones2: Ejercicios del principio<br>
-SpinnerPersona: Ejercicio con el objeto persona en spinner<br>
-objetoEntreActividades: envío de objetos con Serializable<br>
+<b>CheckBox:</b> Ejercicio de los CheckBoxes<br>
+<b>DibujoCanvas:</b> Ejemplo de uso de canvas con pinceles<br>
+<b>EjerArea:</b> Ejercicio de calcular las areas de las diferentes formas<br>
+<b>Eventos:</b> Ejercicio de diferentes tipos de invocar eventos con 3 botones<br>
+<b>HelloWorld:</b> Actividad 3 de HelloWorld<br>
+<b>LinearLayout:</b> Ejemplo de LinearLayout hecho en clase<br>
+<b>ListaDoble:</b>  Dos listas de Directores y películas con adaptadores<br>
+<b>ListaObjeto:</b> Lista con un objeto y un adaptador<br>
+<b>ListaSimple:</b> Ejercicio de las hojas con Spinner simple incluido también<br>
+<b>MenuBasico:</b> Menu y submenu, y menu contextual explicado en clase<br>
+<b>MiMusica:</b> Ejercicio de integrar recursos de música<br>
+<b>PersonaEntreActividades:</b> Clase persona con datos e imágenes<br>
+<b>PlantillaInicio:</b> la plantilla que utilizo para comenzar los proyectos<br>
+<b>RadioButton, ejemploBotones2:</b> Ejercicios del principio<br>
+<b>SpinnerPersona:</b> Ejercicio con el objeto persona en spinner<br>
+<b>objetoEntreActividades:</b> envío de objetos con Serializable<br>
