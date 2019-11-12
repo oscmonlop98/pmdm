@@ -17,3 +17,4 @@
 <b>RadioButton, ejemploBotones2:</b> Ejercicios del principio<br>
 <b>SpinnerPersona:</b> Ejercicio con el objeto persona en spinner<br>
 <b>objetoEntreActividades:</b> envío de objetos con Serializable<br>
+<b>EjercicioRecopilatorio:</b> Falta por terminar<br>
