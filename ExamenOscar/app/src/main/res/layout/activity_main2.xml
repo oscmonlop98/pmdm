@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pruebas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:textColor="#FFAAF1"
+        android:textStyle="bold"
+        android:text="ALQUILER\nMEDIOS MOVIDIDAD" />
+
+    <ImageView
+        android:id="@+id/imagenTitulo"
+        android:layout_marginTop="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="1dp"
+        android:src="@drawable/movilidad" />
+
+    <Spinner
+        android:id="@+id/spAlquiler"
+        android:layout_width="224dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Sin seguro"
+            android:id="@+id/sinSeguro"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/conSeguro"
+            android:text="Seguro COMPLETO" />
+    </RadioGroup>
+
+    <CheckBox
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Casco/Guantes"
+        android:id="@+id/casco"/>
+
+    <CheckBox
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Incluye GPS"
+        android:id="@+id/gps"/>
+
+    <CheckBox
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Más Extras"
+        android:id="@+id/extras"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce peso del paquete"
+        android:layout_marginTop="1dp"
+        android:inputType="number"
+        android:id="@+id/editDias"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOTAL PRECIO"
+        android:layout_marginTop="1dp"
+        android:id="@+id/btnCalcular"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FACTURA"
+        android:layout_marginTop="1dp"
+        android:id="@+id/btnFactura"/>
+    <TextView
+        android:id="@+id/preTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:textSize="12dp"
+        android:text="Precio: "
+        android:textStyle="bold" />
+
+
+</LinearLayout>
