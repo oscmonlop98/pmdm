@@ -19,3 +19,4 @@
 <b>objetoEntreActividades:</b> envío de objetos con Serializable<br>
 <b>EjercicioRecopilatorio:</b> Falta por terminar<br>
 <b>CicloVida:</b>Terminado ciclo vida<br>
+<b>FormasAelatorias:</b>Terminado ejercicio de generar y dibujar figuras aleatorias<br>
