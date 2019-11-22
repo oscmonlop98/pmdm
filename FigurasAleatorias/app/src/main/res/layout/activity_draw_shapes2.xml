@@ -10,8 +10,14 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Pulsa para generar figuras" />
+    <TextView
+        android:id="@+id/muestraContador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contador: "/>
     <view
         class="com.example.figurasaleatorias.ShapeDrawableView"
+        android:id="@+id/contador"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

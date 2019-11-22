@@ -1,6 +1,5 @@
 package com.example.figurasaleatorias;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -10,7 +9,6 @@ import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.graphics.drawable.shapes.RectShape;
 import android.graphics.drawable.shapes.Shape;
-import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -24,11 +22,19 @@ public class ShapeDrawableView extends View {
     private Integer[] mColors =
             { Color.BLACK, Color.BLUE, Color.GREEN, Color.RED };
 
+    private static int total = 0;
+
+
+
     public ShapeDrawableView(Context context) {
-        super(context);    }
+        super(context);
+        total = 0;
+    }
 
     public ShapeDrawableView(Context context, AttributeSet attrs) {
-        super(context, attrs);    }
+        super(context, attrs);
+        total = 0;
+    }
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -43,6 +49,7 @@ public class ShapeDrawableView extends View {
             int y = (int)event.getY();
             if (!isDeletingExistingShape(x, y)) {
                 shapes.add(makeShapeDrawable(x, y));
+                total++;
             }
             invalidate();
             return (true);  // Handled touch event
@@ -56,6 +63,7 @@ public class ShapeDrawableView extends View {
             Rect bounds = shape.getBounds();
             if (bounds.contains(x, y)) {
                 shapes.remove(shape);
+                total--;
                 return(true);
             }
         }
@@ -77,5 +85,9 @@ public class ShapeDrawableView extends View {
         shapeD.setBounds(x-width/2, y-height/2, x+width/2, y+height/2);
         shapeD.getPaint().setColor(RandomUtils.randomElement(mColors));
         return(shapeD);
+    }
+
+    public static int getContador() {
+        return total;
     }
 }
