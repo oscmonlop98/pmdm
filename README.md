@@ -21,4 +21,4 @@
 <b>CicloVida:</b>Terminado ciclo vida<br>
 <b>FormasAelatorias:</b>Terminado ejercicio de generar y dibujar figuras aleatorias<br>
 <h2>2ª EVALUACIÓN</h2><br>
-<b>ExamenCorregido:</b>Terminado ejercicio de generar y dibujar figuras aleatorias<br>
+<b>ExamenCorregido:</b>Terminado examen de la 1ºEv corregido<br>
