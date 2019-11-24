@@ -6,15 +6,16 @@ public class MedioTransporte implements Serializable {
 
     private String modelo;
     private String marca;
-    private float precio;
+    private String precio;
     private int imagen;
 
-    public MedioTransporte(String modelo, String marca, float precio, int imagen) {
+    public MedioTransporte(String modelo, String marca, String precio, int imagen) {
         this.modelo = modelo;
         this.marca = marca;
         this.precio = precio;
         this.imagen = imagen;
     }
+
 
     public String getModelo() {
         return modelo;
@@ -32,11 +33,11 @@ public class MedioTransporte implements Serializable {
         this.marca = marca;
     }
 
-    public float getPrecio() {
+    public String getPrecio() {
         return precio;
     }
 
-    public void setPrecio(float precio) {
+    public void setPrecio(String precio) {
         this.precio = precio;
     }
 

@@ -22,8 +22,8 @@
         <ImageView
             android:id="@+id/imagenTitulo"
             android:layout_marginTop="15dp"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_marginRight="10dp"
             android:src="@drawable/movilidad" />
     </LinearLayout>
@@ -51,24 +51,24 @@
             android:layout_column="0"
 
             android:paddingHorizontal="5dp"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="103dp"
+            android:layout_height="118dp"
             android:src="@drawable/patinete"/>
         <ImageView
             android:id="@+id/img_12"
             android:layout_row="0"
             android:layout_column="1"
             android:paddingHorizontal="5dp"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="103dp"
+            android:layout_height="118dp"
             android:src="@drawable/bicis"/>
         <ImageView
             android:id="@+id/img_13"
             android:layout_row="0"
             android:layout_column="2"
             android:paddingHorizontal="5dp"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="103dp"
+            android:layout_height="118dp"
             android:src="@drawable/coches"/>
     </GridLayout>
 
@@ -77,8 +77,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="100dp"
         android:id="@+id/imgResul"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+        android:layout_width="103dp"
+        android:layout_height="118dp"
         android:text="Total Precio"/>
 
     <Button

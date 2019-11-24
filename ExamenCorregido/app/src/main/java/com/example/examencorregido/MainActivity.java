@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -50,6 +52,31 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(miIntent);
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu (Menu menu){
+        getMenuInflater().inflate(R.menu.menuprincipal, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.MnuOpc1:
+                Intent miIntent1= new Intent(MainActivity.this, Dibujo.class);
+                startActivity(miIntent1);
+                return true;
+            case R.id.MnuOpc2:
+                Intent miIntent2= new Intent(MainActivity.this, Ayuda.class);
+                startActivity(miIntent2);
+                return true;
+            case R.id.MnuOpc3:
+                Intent miIntent3= new Intent(MainActivity.this, Copyright.class);
+                startActivity(miIntent3);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     class MiEleccion implements View.OnClickListener {
