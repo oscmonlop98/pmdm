@@ -1,6 +1,6 @@
 # pmdm
-<h2>Ejercicios</h2>
-
+<h1>Ejercicios</h1>
+<h2>1ª EVALUACIÓN</h2><br>
 <b>CheckBox:</b> Ejercicio de los CheckBoxes<br>
 <b>DibujoCanvas:</b> Ejemplo de uso de canvas con pinceles<br>
 <b>EjerArea:</b> Ejercicio de calcular las areas de las diferentes formas<br>
@@ -20,3 +20,5 @@
 <b>EjercicioRecopilatorio:</b> Falta por terminar<br>
 <b>CicloVida:</b>Terminado ciclo vida<br>
 <b>FormasAelatorias:</b>Terminado ejercicio de generar y dibujar figuras aleatorias<br>
+<h2>2ª EVALUACIÓN</h2><br>
+<b>ExamenCorregido:</b>Terminado ejercicio de generar y dibujar figuras aleatorias<br>
