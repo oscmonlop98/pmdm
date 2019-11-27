@@ -5,33 +5,43 @@ import androidx.core.content.ContextCompat;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 
 import static com.example.gridlayoutaleatorio.RandomUtils.randomInt;
 
 public class MainActivity extends AppCompatActivity {
 
-    static int imgDigits[] = {R.id.barcos, R.id.bicis, R.id.coches};
+    static Integer [] imgDigits = new Integer[]{R.drawable.barco, R.drawable.bici, R.drawable.coche};
 
-    ImageView imagenes[];
-    ImageView imgElegida;
-
-
-    private int numero = 2;
+    GridLayout miLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imgElegida = (ImageView)findViewById(R.id.imagenElegida);
+        miLayout = (GridLayout)findViewById(R.id.vistaImagenes);
 
-        randomInt(numero);
+        int count = miLayout.getChildCount();
 
-        imagenes  = new ImageView[3];
-        for (int i = 0; i < 3; i++) {
-            imagenes[numero] = (ImageView)findViewById(imgDigits[numero]);
+        for(int i = 0 ; i < count-1 ; i++){
+            final ImageView imagen = (ImageView) miLayout.getChildAt(i);
+            final int randomImg = RandomUtils.randomElement(imgDigits);
+            imagen.setImageResource(randomImg);
+
+            miLayout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ImageView ultimaImagen = (ImageView) miLayout.getChildAt(miLayout.getChildCount()-1);
+                    ultimaImagen.setImageResource(randomImg);
+
+                }
+            });
         }
+
+
 
     }
 }
