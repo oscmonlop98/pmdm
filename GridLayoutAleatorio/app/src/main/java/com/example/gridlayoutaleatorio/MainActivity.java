@@ -24,23 +24,25 @@ public class MainActivity extends AppCompatActivity {
 
         miLayout = (GridLayout)findViewById(R.id.vistaImagenes);
 
-        int count = miLayout.getChildCount();
+        final int count = miLayout.getChildCount();
+        int total = count + 1;
 
         for(int i = 0 ; i < count-1 ; i++){
             final ImageView imagen = (ImageView) miLayout.getChildAt(i);
             final int randomImg = RandomUtils.randomElement(imgDigits);
             imagen.setImageResource(randomImg);
 
-            miLayout.setOnClickListener(new View.OnClickListener() {
+            imagen.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    ImageView ultimaImagen = (ImageView) miLayout.getChildAt(miLayout.getChildCount()-1);
+                    ImageView ultimaImagen = (ImageView) findViewById(R.id.imgFinal);
                     ultimaImagen.setImageResource(randomImg);
 
                 }
             });
-        }
 
+
+        }
 
 
     }
