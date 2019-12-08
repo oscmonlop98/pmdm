@@ -8,6 +8,6 @@ public class AcercaDe extends Activity {
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         //Hacemos visible la interfaz/layoutque se encuentra en acercade.xml
-        setContentView(R.layout.acercade);
+        setContentView(R.layout.activity_acerca_de);
     }
 }
