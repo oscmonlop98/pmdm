@@ -3,6 +3,7 @@ package com.example.solobici;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,16 +23,20 @@ public class SoloBici extends AppCompatActivity {
         bJuego = (Button)findViewById(R.id.boton01);
         bJuego.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-//                lanzarJuego();
+                lanzarJuego();
             }
         });
 
         bAcercaDe = (Button)findViewById(R.id.boton03);
         bAcercaDe.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-//                lanzarJuego();
+                lanzarJuego();
             }
         });
+    }
 
+    public void lanzarJuego(){
+        Intent i = new Intent(this, Juego.class);
+        startActivity(i);
     }
 }
