@@ -24,3 +24,7 @@
 <b>ExamenCorregido:</b>Terminado examen de la 1ºEv corregido<br>
 <b>GridLayoutAleatorio:</b>Terminado ejercicio de GridLayout Aleatorio<br>
 <b>HilosEjecucion:</b>Ejemplo ejercicio HilosEjecucion y AsyncTask<br>
+<b>SoloBici:</b>Juego SoloBici empezado<br>
+<b>FragmentoBasico:</b>Ejemplo de fragmento básico de las transparencias hecho en clase<br>
+<b>FragmentoBoton:</b>Ejemplo de fragmento botón de las transparencias hecho en clase<br>
+<b>FragmentosDinamicos:</b>Ejercicio de fragmentos dinámicos con imágenes aleatorias para cada fragmento<br>
