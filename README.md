@@ -28,3 +28,5 @@
 <b>FragmentoBasico:</b>Ejemplo de fragmento básico de las transparencias hecho en clase<br>
 <b>FragmentoBoton:</b>Ejemplo de fragmento botón de las transparencias hecho en clase<br>
 <b>FragmentosDinamicos:</b>Ejercicio de fragmentos dinámicos con imágenes aleatorias para cada fragmento<br>
+<b>FragmentosDiversos:</b>Ejercicio de fragmentos diversos sin terminar<br>
+<b>DibujoLibre:</b>Ejercicio de dibujo libre hecho en clase<br>
