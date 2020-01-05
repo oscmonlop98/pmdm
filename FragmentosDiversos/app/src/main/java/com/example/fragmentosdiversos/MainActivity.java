@@ -13,16 +13,19 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     int mStackPosition = 1;
+
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);        // BotÃ³n de aÃ±adir fragments
-        Button button = (Button) findViewById(R.id.newFragment);
+        setContentView(R.layout.activity_main);
+        Button button = (Button)findViewById(R.id.newFragment);
         button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {addFragment();}
+            @Override
+            public void onClick(View v) {
+                addFragment();
+            }
         });
         if (savedInstanceState == null) {
-            // aÃ±adir el primer fragment
             Fragment newFragment = SimpleFragment.newInstance(mStackPosition);
             FragmentTransaction ft = getFragmentManager().beginTransaction();
             ft.add(R.id.fragmentShow, newFragment).commit();
@@ -41,9 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
     void addFragment() {
         mStackPosition++;
-        // Instanciamos nuevo Fragment
         Fragment newFragment = SimpleFragment.newInstance(mStackPosition);
-        // Se aÃ±ade el Fragment a la actividad
+
         FragmentTransaction ft = getFragmentManager().beginTransaction();
         ft.replace(R.id.fragmentShow, newFragment);
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
@@ -74,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                         }
                 )
-                .setNeutralButton("AtrÃ¡s",
+                .setNeutralButton("Atrás",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
                                 getFragmentManager().popBackStack();
@@ -85,47 +87,7 @@ public class MainActivity extends AppCompatActivity {
     }
     void showDialogF() {
         DialogFragment newFragment = MyDialogFragment.newInstance(
-                "Cadena de ejemplo como parÃ¡metro");
+                "Cadena de ejemplo como parámetro");
         newFragment.show(getFragmentManager(), "dialog");
-    }
-}
-
-public class MyDialogFragment  extends DialogFragment {
-    public static MyDialogFragment newInstance(String valor) {
-        MyDialogFragment frag = new MyDialogFragment();
-   /*
-   Bundle bundle = new Bundle();
-   bundle("clave", valor);
-   frag.setArguments(bundle);
-   */
-        return frag;
-    }
-    @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
-        LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(LAYOUT_INFLATER_SERVICE);
-        ViewGroup dlgview = (ViewGroup) inflater.inflate(R.layout.fragment_my_dialog, null);
-        // botÃ³n nuevo Fragment
-        Button buttonShow = (Button) dlgview.findViewById(R.id.newFrag);
-        buttonShow.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                ((MainActivity) getActivity()).addFragment();
-            }
-        });
-        // botÃ³n cancelar
-        Button buttonCancel = (Button) dlgview.findViewById(R.id.cancel);
-        buttonCancel.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                dismiss();
-            }
-        });
-        // botÃ³n ir a Fragment anterior
-        Button buttonBack = (Button) dlgview.findViewById(R.id.back);
-        buttonBack.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                getFragmentManager().popBackStack();
-            }
-        });
-        // asignar el dialog a la vista
-        return new AlertDialog.Builder(getActivity()).setView(dlgview).create();
     }
 }

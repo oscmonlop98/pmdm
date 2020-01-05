@@ -5,34 +5,30 @@
     android:gravity="center_horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <FrameLayout
+        android:id="@+id/fragmentShow"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fragmentShow"
-        android:layout_weight="0.5">
+        android:layout_weight="0.5" >
     </FrameLayout>
-
-    <Button
+    <Button android:id="@+id/newFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nuevo Fragmento">
+        android:text="Nuevo Fragment">
     </Button>
-
     <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_width="match_parent"
         android:layout_weight="1">
-        <Button
+        <Button android:id="@+id/showDialogF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/showDialogF"
             android:text="Dialogo Fragment"
             android:layout_weight="1"/>
-        <Button
+        <Button android:id="@+id/showDialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dialogo normal"/>
+            android:text="Dialogo Normal"
+            android:layout_weight="1"/>
     </LinearLayout>
-
 </LinearLayout>
